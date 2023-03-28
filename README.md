@@ -65,4 +65,5 @@
       没有梯子或者梯子效果不行或者没有开全局代理.可以写个测试直接进行apikey的调用,然后排除原因
 
    3. 没有给出apikey
+   4. Token超载. 在Chatbot类中的def response中可以定义max_tokens为更大
 
