@@ -3,12 +3,13 @@ from io import BytesIO
 from PyPDF2 import PdfReader
 from generate_embedding import Chatbot
 import requests
+import openai
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
 
-
+openai.api_key ="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"
 @app.route("/", methods=["GET", "POST"])
 def index():
     return render_template("index.html")
