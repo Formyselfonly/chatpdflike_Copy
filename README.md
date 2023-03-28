@@ -35,7 +35,7 @@
    pip install -r requirements.txt
    ```
 
-2. 配置系统环境变量OPENAI_API_KEY，Ps:密钥需要自己上openai官网申请.  如果我的apikey还能跑可以用我的
+2. 配置OPENAI_API_KEY，Ps:密钥需要自己上openai官网申请.  如果我的apikey还能跑可以直接用我的
 
    ```md
    openai.api_key ="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"
