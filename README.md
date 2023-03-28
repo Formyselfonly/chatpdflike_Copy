@@ -35,7 +35,7 @@
    pip install -r requirements.txt
    ```
 
-2. 配置OPENAI_API_KEY，Ps:密钥需要自己上openai官网申请.  如果我的apikey还能跑可以直接用我的
+2. 配置系统环境变量OPENAI_API_KEY，Ps:密钥需要自己上openai官网申请.  如果我的apikey还能跑可以用我的
 
    ```md
    openai.api_key ="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"
@@ -47,10 +47,22 @@
 
 4. 运行
 
-```
-python run.py 
-```
+   ```
+   python run.py 
+   ```
 
-上传后python里面会显示Processing pdf
-Done processing pdf后就可以问问题,让ChatGPT帮忙读PDF了
+   上传后python里面会显示Processing pdf
+   Done processing pdf后就可以问问题,让ChatGPT帮忙读PDF了
+
+5. 报错原因
+
+   1. 没有等待处理完毕
+
+      Pycharm终端显示Processing pdf完毕之前就直接问问题
+
+   2. 无法调用apikey
+
+      没有梯子或者梯子效果不行或者没有开全局代理.可以写个测试直接进行apikey的调用,然后排除原因
+
+   3. 没有给出apikey
 
